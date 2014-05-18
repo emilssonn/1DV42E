@@ -10,16 +10,21 @@
                 height: auto; 
             }
         </style>
-        <!-- Any CSS needed will be added here -->
     </head>
     <body>
         
-        <!-- Image will be added here -->
+        <div class="delayed-image-load" data-src="images/{width}.jpg" data-alt="This is the alt text for the image."></div>
 
-        <!-- Any JavaScript need will be added here if no other recomendation in documentation is given. -->
         <script src="js/imager.js"></script>
         <script>
-            var imager = new Imager();
+            var imager = new Imager({
+                availableWidths: {
+                    768: 'extra-small',
+                    992: 'small',
+                    1200: 'medium',
+                    1920: 'large'
+                }
+            });
         </script>
     </body>
 </html>
