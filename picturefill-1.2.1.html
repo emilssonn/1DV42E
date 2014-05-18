@@ -10,15 +10,27 @@
                 height: auto; 
             }
         </style>
-        <!-- Any CSS needed will be added here -->
 
         <script src="js/matchmedia.js"></script>
         <script src="js/picturefill-1.2.1.js"></script>
     </head>
     <body>
         
-        <!-- Image will be added here -->
+        <span data-picture data-alt="This is the alt text for the image.">
+            <span data-src="images/medium.jpg"></span>
+            <span data-src="images/large.jpg"   data-media="(min-width: 1200px)"></span>
+            <span data-src="images/retina/large.jpg"   data-media="(min-width: 1200px) and (min-device-pixel-ratio: 2.0)"></span>
+            <span data-src="images/medium.jpg"   data-media="(min-width: 992px)"></span>
+            <span data-src="images/retina/medium.jpg"   data-media="(min-width: 992px) and (min-device-pixel-ratio: 2.0)"></span>
+            <span data-src="images/small.jpg"   data-media="(min-width: 768px)"></span>
+            <span data-src="images/retina/small.jpg"   data-media="(min-width: 768px) and (min-device-pixel-ratio: 2.0)"></span>
+            <span data-src="images/extra-small.jpg"   data-media="(max-width: 767px)"></span>
+            <span data-src="images/retina/extra-small.jpg"   data-media="(max-width: 767px) and (min-device-pixel-ratio: 2.0)"></span>
 
-        <!-- Any JavaScript need will be added here if no other recomendation in documentation is given. -->
+            <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+            <noscript>
+                <img src="images/medium.jpg" alt="This is the alt text for the image.">
+            </noscript>
+        </span>
     </body>
 </html>

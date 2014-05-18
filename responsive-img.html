@@ -10,13 +10,18 @@
                 height: auto; 
             }
         </style>
-        <!-- Any CSS needed will be added here -->
     </head>
     <body>
         
-        <!-- Image will be added here -->
+        <img alt='This is the alt text for the image.' data-src-base='images/' data-src-base2x='images/retina/' 
+            data-src='  >1200:large.jpg,
+                        >992:medium.jpg,
+                        >768:small.jpg,
+                        <768:extra-small.jpg' />
+        <noscript>
+            <img alt='This is the alt text for the image.' src='images/medium.jpg' />
+        </noscript>
 
-        <!-- Any JavaScript need will be added here if no other recomendation in documentation is given. -->
         <script src='js/responsive-img.js'></script>
     </body>
 </html>
