@@ -13,7 +13,7 @@
     </head>
     <body>
         
-        <div class="delayed-image-load" data-src="images/{pixel_ratio}{width}.jpg" data-alt="This is the alt text for the image."></div>
+        <div class="delayed-image-load" data-src="images/{width}{pixel_ratio}.jpg" data-alt="This is the alt text for the image."></div>
 
         <script src="js/imager.js"></script>
         <script>
@@ -23,10 +23,6 @@
                     992: 'small',
                     1200: 'medium',
                     1920: 'large'
-                },
-                availablePixelRatios: {
-                    1: '',
-                    2: 'retina/'
                 }
             });
         </script>
